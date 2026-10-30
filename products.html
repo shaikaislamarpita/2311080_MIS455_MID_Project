@@ -7,12 +7,13 @@
     <title>PaperNest - Products</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <!-- Name: Shaika Islam Arpita, ID: 2311080 -->
 
     <header>
-        <h1>PaperNest</h1>
-        <p>Your Everyday Stationery Store</p>
+        <h1>🌸 PaperNest 🌸</h1>
+        <p>Your Cute & Cozy Stationery Store</p>
     </header>
 
     <nav>
@@ -22,13 +23,187 @@
     </nav>
 
     <main>
-        <h2>Our Products</h2>
-        <p>Explore our collection of stylish and affordable stationery.</p>
+
+        <section class="product-heading">
+
+            <h2>♡ Our Kawaii Collection ♡</h2>
+
+            <p>
+                Welcome to our adorable stationery collection!
+                Discover cute notebooks, colorful pens, planners,
+                stickers and other stationery essentials.
+            </p>
+
+            <p>
+                Choose your favorite products and add them to
+                your shopping cart. All our products are selected
+                to make studying, writing and organizing more fun!
+            </p>
+
+        </section>
+
+        <!-- Product Grid -->
+
+        <section class="product-container">
+
+            <div class="product-card">
+
+                <img src="images/kawaii-notebook.jpg"
+                     alt="Kawaii Notebook">
+
+                <h3>Kawaii Notebook</h3>
+
+                <p>
+                    A beautiful pastel notebook for school,
+                    journaling and creative writing.
+                </p>
+
+                <h4>Tk 250</h4>
+
+                <button onclick="addToCart('Kawaii Notebook',250)">
+                    Add to Cart
+                </button>
+
+            </div>
+
+            <div class="product-card">
+
+                <img src="images/kawaii-pens.jpg"
+                     alt="Pastel Pen Set">
+
+                <h3>Pastel Pen Set</h3>
+
+                <p>
+                    A lovely set of colorful pens to
+                    brighten your everyday writing.
+                </p>
+
+                <h4>Tk 180</h4>
+
+                <button onclick="addToCart('Pastel Pen Set',180)">
+                    Add to Cart
+                </button>
+
+            </div>
+
+            <div class="product-card">
+
+                <img src="images/kawaii-planner.jpg"
+                     alt="Dreamy Daily Planner">
+
+                <h3>Dreamy Daily Planner</h3>
+
+                <p>
+                    Keep your daily activities organized
+                    with this adorable pastel planner.
+                </p>
+
+                <h4>Tk 350</h4>
+
+                <button onclick="addToCart('Dreamy Daily Planner',350)">
+                    Add to Cart
+                </button>
+
+            </div>
+
+            <div class="product-card">
+
+                <img src="images/kawaii-stickers.jpg"
+                     alt="Cute Sticker Pack">
+
+                <h3>Cute Sticker Pack</h3>
+
+                <p>
+                    Decorate your journals and notebooks
+                    with colorful and adorable stickers.
+                </p>
+
+                <h4>Tk 120</h4>
+
+                <button onclick="addToCart('Cute Sticker Pack',120)">
+                    Add to Cart
+                </button>
+
+            </div>
+
+            <div class="product-card">
+
+                <img src="images/kawaii-highlighters.jpg"
+                     alt="Pastel Highlighters">
+
+                <h3>Pastel Highlighters</h3>
+
+                <p>
+                    Highlight important notes with these
+                    beautiful soft pastel colors.
+                </p>
+
+                <h4>Tk 220</h4>
+
+                <button onclick="addToCart('Pastel Highlighters',220)">
+                    Add to Cart
+                </button>
+
+            </div>
+
+            <div class="product-card">
+
+                <img src="images/kawaii-pencilcase.jpg"
+                     alt="Kawaii Pencil Case">
+
+                <h3>Kawaii Pencil Case</h3>
+
+                <p>
+                    Store your favorite pens and pencils
+                    inside this cute stationery pouch.
+                </p>
+
+                <h4>Tk 300</h4>
+
+                <button onclick="addToCart('Kawaii Pencil Case',300)">
+                    Add to Cart
+                </button>
+
+            </div>
+
+        </section>
+
+        <!-- Shopping Cart -->
+
+        <section class="shopping-cart">
+
+            <h2>♡ Your Shopping Cart ♡</h2>
+
+            <p>
+                Add your favorite products to the cart.
+                Check your total price and enjoy a Tk 100
+                discount on purchases of Tk 1000 or more.
+            </p>
+
+            <h3>Cart Items: <span id="cartCount">0</span></h3>
+
+            <br>
+
+            <button onclick="showCart()">
+                Show Cart
+            </button>
+
+            <button onclick="clearCart()">
+                Clear Cart
+            </button>
+
+            <div id="cartDetails"></div>
+
+        </section>
+
     </main>
 
     <footer>
+        <p>♡ PaperNest - Your Happy Stationery Place ♡</p>
         <p>&copy; 2026 PaperNest. All Rights Reserved.</p>
     </footer>
+
+    <script src="script.js"></script>
 
 </body>
 </html>
