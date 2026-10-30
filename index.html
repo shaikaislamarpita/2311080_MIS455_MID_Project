@@ -131,73 +131,84 @@
 
         <!-- JavaScript Calculator Section -->
 
-        <section class="calculator">
+        
+<!-- JavaScript Calculator Section -->
 
-            <h2>♡ Your Shopping Calculator ♡</h2>
+<section class="calculator">
 
-            <p>
-                Want to know how much your favorite stationery
-                will cost? Select your product, enter the
-                quantity and calculate your total amount.
-            </p>
+    <h2>♡ Your Shopping Calculator ♡</h2>
 
-            <div class="calculator-box">
+    <p>
+        Choose your favorite stationery and enter the
+        quantity of each product. Calculate your total
+        shopping cost and check your discount!
+    </p>
 
-                <label for="productBox">Select Product:</label>
-                <br>
+    <div class="calculator-box">
 
-                <select id="productBox">
-                    <option value="250">Kawaii Notebook - Tk 250</option>
-                    <option value="180">Pastel Pen Set - Tk 180</option>
-                    <option value="350">Dreamy Daily Planner - Tk 350</option>
-                </select>
+        <h3>Choose Your Products</h3>
 
-                <br><br>
+        <br>
 
-                <label for="quantityBox">Enter Quantity:</label>
-                <br>
+        <label for="notebookBox">
+            Kawaii Notebook - Tk 250
+        </label>
+        <br>
+        <input id="notebookBox" type="number" min="0" value="0">
 
-                <input id="quantityBox" type="number" min="1">
+        <br><br>
 
-                <br><br>
+        <label for="penBox">
+            Pastel Pen Set - Tk 180
+        </label>
+        <br>
+        <input id="penBox" type="number" min="0" value="0">
 
-                <button onclick="calculateTotal()">
-                    Calculate Total
-                </button>
+        <br><br>
 
-                <br><br>
+        <label for="plannerBox">
+            Dreamy Daily Planner - Tk 350
+        </label>
+        <br>
+        <input id="plannerBox" type="number" min="0" value="0">
 
-                <label for="totalBox">Total Price (Tk):</label>
-                <br>
+        <br><br>
 
-                <input id="totalBox" type="text" readonly>
+        <button onclick="calculateTotal()">
+            Calculate Total
+        </button>
 
-                <br><br>
+        <br><br>
 
-                <button onclick="checkDiscount()">
-                    Check Discount
-                </button>
+        <label for="totalBox">Total Price (Tk):</label>
+        <br>
+        <input id="totalBox" type="text" readonly>
 
-                <br><br>
+        <br><br>
 
-                <label for="discountBox">Discount (Tk):</label>
-                <br>
+        <button onclick="checkDiscount()">
+            Check Discount
+        </button>
 
-                <input id="discountBox" type="text" readonly>
+        <br><br>
 
-                <br><br>
+        <label for="discountBox">Discount (Tk):</label>
+        <br>
+        <input id="discountBox" type="text" readonly>
 
-                <label for="payableBox">Payable Amount (Tk):</label>
-                <br>
+        <br><br>
 
-                <input id="payableBox" type="text" readonly>
+        <label for="payableBox">
+            Final Payable Amount (Tk):
+        </label>
+        <br>
+        <input id="payableBox" type="text" readonly>
 
-                <p id="resultMessage"></p>
+        <p id="resultMessage"></p>
 
-            </div>
+    </div>
 
-        </section>
-
+</section>
 
         <!-- Why Choose Us Section -->
 
