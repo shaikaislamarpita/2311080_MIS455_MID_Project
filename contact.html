@@ -7,12 +7,13 @@
     <title>PaperNest - Contact Us</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <!-- Name: Shaika Islam Arpita, ID: 2311080 -->
 
     <header>
-        <h1>PaperNest</h1>
-        <p>Your Everyday Stationery Store</p>
+        <h1>🌸 PaperNest 🌸</h1>
+        <p>Your Cute & Cozy Stationery Store</p>
     </header>
 
     <nav>
@@ -22,13 +23,123 @@
     </nav>
 
     <main>
-        <h2>Contact Us</h2>
-        <p>Have a question? We would love to hear from you.</p>
+
+        <!-- Contact Introduction -->
+
+        <section class="contact-heading">
+
+            <h2>♡ Let's Stay Connected! ♡</h2>
+
+            <p>
+                Have a question about our adorable stationery?
+                Need help choosing your favorite products?
+                We would love to hear from you!
+            </p>
+
+            <p>
+                At PaperNest, your happiness is our priority.
+                Send us a message using the form below and
+                let us know how we can help you.
+            </p>
+
+        </section>
+
+        <!-- Contact Images -->
+
+        <section class="contact-images">
+
+            <img src="images/hero-stationery.jpg"
+                 alt="Cute pastel stationery collection">
+
+            <img src="images/kawaii-planner.jpg"
+                 alt="Cute daily planner">
+
+        </section>
+
+        <!-- Contact Information and Form -->
+
+        <section class="contact-container">
+
+            <div class="contact-info">
+
+                <h2>♡ Get In Touch ♡</h2>
+
+                <p>
+                    We are always happy to answer your
+                    questions and receive your feedback.
+                </p>
+
+                <h3>Our Location</h3>
+                <p>Dhaka, Bangladesh</p>
+
+                <h3>Email Address</h3>
+                <p>hello@papernest.example</p>
+
+                <h3>Opening Hours</h3>
+                <p>Saturday - Thursday</p>
+                <p>10:00 AM - 8:00 PM</p>
+
+                <p>
+                    Thank you for choosing PaperNest!
+                    Keep smiling and stay creative. ♡
+                </p>
+
+            </div>
+
+            <div class="contact-form">
+
+                <h2>♡ Send Us a Message ♡</h2>
+
+                <label for="nameBox">Your Name:</label>
+                <br>
+                <input id="nameBox" type="text"
+                       placeholder="Enter your name">
+
+                <br><br>
+
+                <label for="emailBox">Email Address:</label>
+                <br>
+                <input id="emailBox" type="email"
+                       placeholder="Enter your email">
+
+                <br><br>
+
+                <label for="subjectBox">Subject:</label>
+                <br>
+                <input id="subjectBox" type="text"
+                       placeholder="Enter subject">
+
+                <br><br>
+
+                <label for="messageBox">Your Message:</label>
+                <br>
+                <textarea id="messageBox" rows="5"
+                          placeholder="Write your message"></textarea>
+
+                <br><br>
+
+                <button onclick="sendMessage()">
+                    Send Message
+                </button>
+
+                <button onclick="clearForm()">
+                    Clear Form
+                </button>
+
+                <p id="contactResult"></p>
+
+            </div>
+
+        </section>
+
     </main>
 
     <footer>
+        <p>♡ PaperNest - Your Happy Stationery Place ♡</p>
         <p>&copy; 2026 PaperNest. All Rights Reserved.</p>
     </footer>
+
+    <script src="script.js"></script>
 
 </body>
 </html>
