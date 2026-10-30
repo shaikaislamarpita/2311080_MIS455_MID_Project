@@ -1,4 +1,6 @@
 
+/* General Website Styling */
+
 * {
     margin: 0;
     padding: 0;
@@ -7,68 +9,344 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f8f6f2;
-    color: #333333;
+    background-color: #fff8fc;
+    color: #51465a;
     line-height: 1.6;
 }
 
+/* Header */
+
 header {
-    background-color: #354f52;
-    color: white;
+    background-color: #ffd6e7;
+    color: #824d70;
     text-align: center;
-    padding: 25px;
+    padding: 30px;
 }
 
 header h1 {
-    font-size: 36px;
+    font-size: 38px;
+    margin-bottom: 5px;
 }
 
 header p {
     font-size: 16px;
 }
 
+/* Navigation Bar */
+
 nav {
-    background-color: #52796f;
+    background-color: #d9c3f4;
     text-align: center;
-    padding: 15px;
+    padding: 16px;
 }
 
 nav a {
-    color: white;
+    color: #593b70;
     text-decoration: none;
-    padding: 12px 20px;
+    padding: 12px 22px;
     margin: 5px;
-    border-radius: 5px;
+    border-radius: 25px;
+    font-weight: bold;
+    display: inline-block;
+    transition: background-color 0.3s;
 }
 
 nav a:hover {
-    background-color: #cad2c5;
-    color: #253b35;
+    background-color: #ff9fc6;
+    color: white;
 }
 
 nav a.active {
-    background-color: #354f52;
+    background-color: #f7a9cc;
+    color: white;
 }
 
+/* Main Content */
+
 main {
-    max-width: 1100px;
-    margin: 30px auto;
-    padding: 25px;
+    max-width: 1150px;
+    margin: 35px auto;
+    padding: 20px;
     min-height: 55vh;
 }
 
 main h2 {
-    color: #354f52;
-    margin-bottom: 15px;
+    color: #a45d90;
+    margin-bottom: 18px;
 }
 
 main p {
     margin-bottom: 15px;
 }
 
-footer {
-    background-color: #354f52;
+/* Home Page Hero Section */
+
+.hero {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+    background-color: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 5px 20px #f3dcea;
+}
+
+.hero-text {
+    flex: 1;
+}
+
+.hero-text h2 {
+    font-size: 32px;
+}
+
+.hero-text p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.hero-image {
+    flex: 1;
+}
+
+.hero-image img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 18px;
+}
+
+/* Shop Links */
+
+.shop-link {
+    display: inline-block;
+    background-color: #f59ac1;
     color: white;
+    text-decoration: none;
+    padding: 13px 26px;
+    border-radius: 25px;
+    font-weight: bold;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+.shop-link:hover {
+    background-color: #c776a5;
+}
+
+/* Featured Products */
+
+.featured {
+    margin-top: 55px;
     text-align: center;
+}
+
+.featured h2 {
+    font-size: 29px;
+}
+
+.featured > p {
+    max-width: 750px;
+    margin: 0 auto 25px;
+}
+
+.feature-container {
+    display: flex;
+    gap: 25px;
+    margin-top: 25px;
+}
+
+.feature-box {
+    flex: 1;
+    background-color: white;
     padding: 20px;
+    border-radius: 18px;
+    box-shadow: 0 4px 15px #efdbea;
+    transition: transform 0.3s;
+}
+
+.feature-box:hover {
+    transform: translateY(-6px);
+}
+
+.feature-box img {
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+    border-radius: 14px;
+}
+
+.feature-box h3 {
+    color: #a45d90;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.feature-box p {
+    font-size: 15px;
+}
+
+.feature-box h4 {
+    color: #de659b;
+    font-size: 19px;
+}
+
+/* JavaScript Calculator */
+
+.calculator {
+    margin-top: 55px;
+    padding: 40px;
+    background-color: #f2eaff;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.calculator h2 {
+    font-size: 28px;
+}
+
+.calculator > p {
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+.calculator-box {
+    max-width: 470px;
+    margin: 25px auto 0;
+    padding: 30px;
+    background-color: white;
+    border-radius: 18px;
+    text-align: left;
+    box-shadow: 0 4px 15px #e2d6ec;
+}
+
+.calculator-box label {
+    font-weight: bold;
+    color: #87547f;
+}
+
+.calculator-box input,
+.calculator-box select {
+    width: 100%;
+    padding: 12px;
+    margin-top: 7px;
+    border: 1px solid #e6c9dd;
+    border-radius: 9px;
+    font-size: 15px;
+    background-color: #fffafd;
+}
+
+.calculator-box input:focus,
+.calculator-box select:focus {
+    outline: 2px solid #d9a6dc;
+}
+
+.calculator-box button {
+    background-color: #e58db7;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 12px 25px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.calculator-box button:hover {
+    background-color: #b96b9a;
+}
+
+#resultMessage {
+    color: #a45d90;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+/* Why Choose Us Section */
+
+.why-us {
+    margin-top: 55px;
+    padding: 40px;
+    background-color: #ffeaf3;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.why-us h2 {
+    font-size: 28px;
+}
+
+.why-us p {
+    max-width: 800px;
+    margin: 15px auto;
+}
+
+/* Footer */
+
+footer {
+    background-color: #d9c3f4;
+    color: #593b70;
+    text-align: center;
+    padding: 25px;
+}
+
+footer p {
+    margin: 5px;
+}
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+
+    header h1 {
+        font-size: 30px;
+    }
+
+    nav {
+        padding: 10px;
+    }
+
+    nav a {
+        padding: 10px 15px;
+        margin: 3px;
+    }
+
+    main {
+        margin: 15px auto;
+        padding: 15px;
+    }
+
+    .hero {
+        flex-direction: column;
+        padding: 22px;
+    }
+
+    .hero-text h2 {
+        font-size: 26px;
+    }
+
+    .hero-image {
+        width: 100%;
+    }
+
+    .hero-image img {
+        height: 260px;
+    }
+
+    .feature-container {
+        flex-direction: column;
+    }
+
+    .calculator {
+        padding: 20px;
+    }
+
+    .calculator-box {
+        padding: 22px;
+    }
+
+    .why-us {
+        padding: 25px;
+    }
+
 }
